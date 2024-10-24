@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <div class="navbar-brand">Green <span style="color: goldenrod;">Car</span> Wash</div>
+    <button class="navbar-toggler" (click)="toggleNavbar()">
+      <span>&#9776;</span> <!-- Hamburger Icon -->
+    </button>
+    <ul [class.active]="navbarOpen" class="navbar-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <app-profile-bar></app-profile-bar>
+
+  
