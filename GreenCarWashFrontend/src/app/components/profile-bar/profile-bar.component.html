@@ -2,11 +2,23 @@
     <div class="navbar-container">
        <div class="menu">
           <!-- If user is not logged in, show Login and Register -->
-          <button class="navbar-btn login-btn">Login</button>    
-          <!-- <div class="profile-circle">
-             <img src="../../../assets/images/carWash1.jpg" alt="Profile" />
-          </div> -->
+     
+          <div class="profile-circle" *ngIf="user; else loginBtn">
+            <a href="/profile">
+               <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png" alt="Profile" />
+            </a>
+          </div>
+          <ng-template #loginBtn>
+            <button (click)=gotoLogin()  class="navbar-btn login-btn">
+               Login
+            </button>
+          </ng-template>
+          
+           
+
        </div>
     </div>
  </nav>
+ 
+
  

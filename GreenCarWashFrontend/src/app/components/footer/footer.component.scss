@@ -1,16 +1,13 @@
 .footer {
-    background-color: #323c3227;
-    color: rgb(52, 52, 52);
-    text-align: start;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 1rem;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
+  background-color: #323c3227;
+  color: rgb(99, 99, 99);
+  text-align: start;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}

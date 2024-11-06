@@ -1,0 +1,50 @@
+.login-container {
+    background-color: #212529;
+    padding: 20px;
+    width: 55%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    height: 100vh;           /* Full viewport height */
+    border: 2px solid black; /* Just to visualize the container */
+}
+
+.form-div{
+    text-align: center;
+}
+
+
+.cus-input{
+    width: 100%;
+    padding: 15px 5px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    color: azure;
+}
+
+.login-btn{
+    border: none;
+    background: goldenrod;
+    border-radius: 6px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.register{
+    padding: 10px;
+    color: gainsboro;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        color: blue;
+    }
+}

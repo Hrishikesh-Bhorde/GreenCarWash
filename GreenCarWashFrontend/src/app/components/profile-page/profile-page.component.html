@@ -1,0 +1,56 @@
+<div class="container">
+    <!-- Profile Section (Left) -->
+    <div class="profile-container">
+      <!-- <h2 class="profile-title">Profile</h2> -->
+      <div class="profile-img">
+        <img [src]="profile.profileImg" alt="Profile Image">
+      </div>
+  
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [value]="profile.name" [disabled]="!isEditable">
+  
+        <label for="address">Address:</label>
+        <input type="text" id="address" [value]="profile.address" [disabled]="!isEditable">
+  
+        <label for="phone">Phone No:</label>
+        <input type="text" id="phone" [value]="profile.phone" [disabled]="!isEditable">
+  
+        <label for="email">Email:</label>
+        <input type="text" id="email" [value]="profile.email" disabled>
+  
+        <button type="button" class="edit-btn" (click)="toggleEdit()">
+          {{ isEditable ? 'Save' : 'Edit' }}
+        </button>
+      </form>
+    </div>
+  
+    <!-- Accordion Section (Right) -->
+    <div class="accordion-container">
+       <span>
+        <h4 style="color: #f4f4f497;">My Cars</h4>
+        <button> + Add Car</button>
+       </span>
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let car of cars">
+          <button class="accordion-header" (click)="toggleAccordion(car)">
+            {{ car.name }}
+          </button>
+          <div class="accordion-body" *ngIf="car.isOpen">
+            <img class="car-image" src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=road-car-vehicle-170811.jpg&fm=jpg" [alt]=car.model>
+            <p><strong>Model:</strong> {{ car.model }}</p>
+            <p><strong>Year:</strong> {{ car.year }}</p>
+            <p><strong>Details:</strong> {{ car.details }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+<div>
+    <button class="logout-btn">Logout</button>
+</div>
+  

@@ -3,6 +3,44 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #dad7cd60;
-    font-family: sans-serif;
+  //   color: #1b1b1b;
+    background: rgba(245, 245, 245, 0.537);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    // color: #333;
+    background: #15181b;
+}
+
+main {
+    flex: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #292828;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #202020;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
